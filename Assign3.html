@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function firstCap(msg) {
+  const words = msg.split(' ');
+  
+  if (words.length === 0) {
+    document.write("Please enter a non-empty string.");
+    return;
+  }
+  for(let i=0; i<words.length; i++){
+    words[i] = words[i].charAt(0).toUpperCase() + words[0].slice(1);
+  }
+  
+
+  const capital = words.join(' '); 
+  document.write(capital);
+}
+
+var msg = prompt("Enter any string:");
+firstCap(msg);
+
+        </script>
+</body>
+</html>

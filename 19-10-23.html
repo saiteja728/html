@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var even=0;
+        var oddmul=1;
+        for (let x=1; x<=100; x++){
+            if(x%2==0){
+                even=even+x;
+                
+            }else{
+                oddmul=oddmul*x;
+            }
+        }
+        console.log("even numbers sum is:"+" "+even);
+        console.log("odd numbers multification is:"+" "+oddmul);
+        // function strongNumber(a){
+        //     var o=a;
+        //     var s1=0;
+        //     while(a!==0){
+        //         let r = a %10;
+        //         for(let i=1; i>=r; i--){
+        //         s1=s1*10+r;
+        //         a =a/10;
+        //         }
+        //         if(o==s1){
+        //         console.log("storng number");
+        //         }else{
+        //             console.log("not a strong number");
+        //         }
+        //     }
+        // }
+        //strongNumber(145);
+        </script>
+</body>
+</html>

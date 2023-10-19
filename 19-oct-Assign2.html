@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var name="welcome";
+var name=prompt("enter name:");
+for(let i=0; i<=name.length; i++){
+    if(name.charAt(i)=='a' || name.charAt(i)=='e' || name.charAt(i)=='i' || name.charAt(i)=='o' || name.charAt(i)=='u'){
+        for(let j=i+1; j<=name.length; j++){
+            if(name.charAt(i)==name.charAt(j)){
+    document.write(name.charAt(i));
+    }
+}
+}
+}
+    </script>
+</body>
+</html>
