@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fabinace-series</title>
+</head>
+<body>
+    <h2>fabinace-series,map(),filter()</h2>
+    <!-- <script>
+        var first=0;
+        var second=1;
+        var r;
+        var text="";
+        document.write(first+" ");
+        document.write(second+" ");
+        for (let i=2; i<10; i++){
+            r = first+second;
+            document.write(r+" ");
+            first = second;
+            second= r;
+        }
+
+    </script> -->
+    <!-- map is used to create new array by applying function to the existing array elements and returns new 
+    array elements  -->
+   <p id="movie"></p>
+    <script>
+        // map:
+        const numbers = [1,2,3,4,5,6];
+        const doublenumbers = numbers.map((number) => number*2);
+        console.log(doublenumbers);
+
+        //eg-2:
+        const words =["tiger","lion","rabit","pig","vijaya"];
+       const uppercasewords =  words.map((word) => word.toUpperCase()); 
+       console.log(uppercasewords);  
+       
+       //how to create a map 
+       const movies = new Map([["rrr",600],["bahubali",500],["kushi",400],["leo",300]]);
+      //using set(),we can replace elements also in this 
+       movies.set(["kesari",1000]);
+       movies.set(["kushi",500]);
+      // document.getElementById("movie").innerHTML= movies.get("bahubali");
+      // document.getElementById("movie").innerHTML= movies.size;
+      // document.getElementById("movie").innerHTML=movies.delete("rrr");
+      document.write("using tostring():"+ movies)
+      let text =" ";
+      for(let x of movies.entries()){
+        text = text+x+"<br>";
+        
+      }
+      document.write(text+"<br>");
+       document.getElementById("movie").innerHTML= movies.has("kushi");
+
+       const digits= [1,2,3,4,5,6];
+       const evenfilter = digits.filter((digit) => digit%2==0);
+       document.write("after filetering digits we get even numbers:"+evenfilter);
+
+    </script>
+</body>
+</html>
