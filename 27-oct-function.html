@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuctions types</title>
+</head>
+<body>
+    <p><strong>function types:</strong></p>
+    <script>
+        //user defined funcitons
+        //function with parameters with return type
+        function sum(num1,num2){
+            return num1+num2;
+        }
+        //function with parameters without return type
+        function sub(num1,num2=6){
+            document.write(num1-num2);
+        }
+        sub(8,9);
+        //function without parameters without return type
+        function mul(){
+            document.write("function without parameters without return type<br>");
+        }
+        mul();
+        //function without parameters with return type
+        function div(){
+            let a =10;
+            let b=5;
+            return a/b;
+        }
+        document.write(div());
+        document.write(sum(5,9));
+        //anonymous function with params
+        var addition = function (num1,num2){
+            return num1+num2;
+        };
+        document.write(addition(100,50));
+        //anonymous fuction w/o params
+        var quotes = function(){
+            document.write("practice makes mans perfect..!<br>");
+        }; quotes();
+        //Immediate Invoke function Expression
+        //this expression works immediately at once in one place it doesn't work anther place this is also calledd self-executing function
+
+        (function(){
+            document.write("Immediate Invoke function call executed...<br>");
+        })();
+
+        //Arrow functions: w/o using the funtion keyword and simplyfying shorter way
+        var a = () =>{
+            document.write("Arrow funciton invoked..<br>");
+        }
+        a();
+
+        //Immediate invokation with arrow function
+        var a = (() =>{
+            document.write("Immediate Arrow funciton invoked..");
+        })
+        a();
+    </script>
+    
+</body>
+</html>
