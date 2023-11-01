@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string consepts</title>
+</head>
+<body>
+    <h2>String consepts:</h2>
+    <p text-align="center" id ="demo"></p>
+    <script>
+        let text = "sai sowjee";
+        let text2 ="sai teja";
+        //at(i)
+        let character = text.at(0);
+        let character1 = text.at(-1);
+        //text[i]
+        //text.charAt(i)
+        //text.charAt(text.length-1)
+        document.write(text.charCodeAt(1));//it returns alphabet ascii value
+        document.write(text.codePointAt(2));//it returns same as uni code value
+        document.write("using index position "+text[2]);
+
+        document.write(text.concat(" ","good girl"));//it combines multiple string
+        document.getElementById("demo").innerHTML ="last character "+character1;
+
+        document.write(text.endsWith("sowjee"));//it returns true because it ends with sowjee
+        document.write("character position "+character);
+
+        document.write(text.fromCharCode(97,98))//it returns ab value
+
+        document.write(text.includes("sai")); //it returns true
+        document.write(text.indexOf("sai"));//it returns first occurance of character position
+        //text.lastIndexOf("sowjee");//returns last e position
+
+        document.write(text.localeCompare(text2));//it compares strings and if equal then returns
+        //0 if sorted then returns -1
+
+        text.match("ai");///it searches ai in string and gives result as ai
+        //basically uses in regular expressions
+        let text3 ="5";
+        document.write(text3.padEnd(4,"x"));//padEnd gives output is 5xxx total characters=4 remaining=x
+        //same as padStart()
+
+        function emp(id,age,designation){
+            this.id = id;
+            this.age =age;
+            this.designation=designation;
+        }
+        emp.prototype.salry=45000;
+        let objemp = new emp(111,25,"developer");
+        document.write(objemp);
+        //prototype is for add more attributes
+
+        let message ="hello world";
+        document.write(message.repeat(3));
+        //repeat(how many times) is for repeating the message
+
+        let text4 = "Mr blue has a blue car and blue house";
+        let result = text4.replace("blue","red");
+        document.write(result);
+        //replace() is for replacing the sentence/word
+
+       console.log( text4.slice(0,5));//slice(i1,i2)
+        document.write(text4.split(" ",3));//3 means 3 words
+        if(message.startsWith("hello")){
+            document.write("startswith executed");
+        }
+        message.substring(0,4);
+        message.trim();
+        messag.trimEnd();
+    </script>
+</body>
+</html>
