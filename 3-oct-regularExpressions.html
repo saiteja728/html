@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegularExpressions</title>
+</head> 
+<body>
+    
+    <h2>RegularExpressions:</h2>
+    <p>its a pattern of characters. Pattern is for searching and replacing characters.</p>
+    <p id="global"></p>
+
+    <script>
+        let text ="Is this all there is?";
+        let pattern =/is/g;
+      //  let result = text.match(pattern);
+     //   let result = text.match(pattern);
+        let result = pattern.exec(text);
+        document.getElementById("global").innerHTML=result;
+    </script>
+    
+</body>
+</html>
